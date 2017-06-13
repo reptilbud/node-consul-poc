@@ -103,4 +103,4 @@ There is some known issues which need to be fixed, but it was not the purpose he
 
 ## License
 
-Copyright (c) 2017 **reptilbud** Licensed under the MIT license
+Copyright (c) 2017 **reptilbud** Licensed under the [MIT license](https://github.com/reptilbud/node-consul-poc/blob/master/LICENSE)
