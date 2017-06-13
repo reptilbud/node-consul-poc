@@ -1,0 +1,32 @@
+{
+  "name": "worldservice",
+  "version": "1.0.0",
+  "description": "HAProxy load balancing Node.js apps discovered via Consul",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlhunter/consul-haproxy-example.git"
+  },
+  "keywords": [
+    "consul",
+    "discovery",
+    "consul-template",
+    "haproxy"
+  ],
+  "author": "Thomas Hunter II <me@thomashunter.name>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tlhunter/consul-haproxy-example/issues"
+  },
+  "homepage": "https://github.com/tlhunter/consul-haproxy-example#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "consul": "^0.27.0",
+    "express": "^4.14.0",
+    "request": "^2.79.0",
+    "uuid": "^3.0.0"
+  }
+}

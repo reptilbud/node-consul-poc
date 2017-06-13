@@ -1,0 +1,17 @@
+global
+  maxconn 256
+
+defaults
+  mode http
+  timeout connect 5000ms
+  timeout client 50000ms
+  timeout server 50000ms
+
+frontend http-in
+  bind localhost:8000
+  default_backend helloservice
+  stats enable
+  stats uri /admin?stats
+
+backend helloservice{{range service "helloservice"}}
+  server {{.ID}} {{.Address}}:{{.Port}} maxconn 32{{end}}
